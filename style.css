@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.imagenPortada{
+    width: 100%;
+    height: 500px;
+    background-image:url(../img/hotelEliseo.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.titulo{
+    color: brown;
+    font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+  
+    
+
+}
+
+
+
+
+   
+
+
+.navegador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    background-color: bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    @media(max-width:576px) {
+       
+     .navegador{
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-content: center;
+        width:100%;
+       }
+        
+    }
+ 
+    
+
+
+.navegador ul {
+    list-style-type: none;
+    border-top: 50px;
+    padding: 10px;
+}
+
+.navegador ul > li {
+    display: inline-block;
+ 
+    
+}
+
+.navegador ul > li > a {
+    display: inline-block;
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+    
+}
+
+.parrafos{
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    align-content: justify;
+    color: brown;
+    background-color: brown;
+    padding: 30px;
+    line-height: 200%;
+    text-align: center;
+
+    animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-10%,0);
+        color: beige;
+    }
+    50% {
+        text-shadow: 0 25px 50px beige;
+    }
+    100% {
+        transform: translate(0,0);
+        color: beige;
+    }
+}
+.footer{
+    display: block;
+    padding: 3px;
+    border: solid 2px;
+    bottom: 0;
+    width:100%;
+    height: auto;
+   
+
+}
+
+.parrafoFooter{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: black;
+}
+/* habitaciones*/
+
+.subtitulos{
+    font-size: 32px;
+    text-align: center;
+    color: crimson;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+
+}
+.tarjetasHabitaciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tarjeta{
+    display: block;
+    width: 350px;
+    border: solid 3px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.tarjeta__img{
+    width: 100%;
+
+}
+
+.tarjeta__titulo{
+    padding: 5px;
+}
+
+.tarjeta__desc{
+    padding: 5px;
+}
+
+.btn{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    border: solid 2px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: coral;
+    color: rgb(237, 233, 229);
+    
+    
+}
+
+/*contacto*/
+.consultas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: brown;
+    padding: 20px;
+    margin: 20px;
+
+}
+.formularios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formulario{
+    display: block;
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    border: solid 2px;
+    border-radius: 10px;
+    background-color:bisque;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*gastronomía*/
+
+.imagenRestaurant{
+    display: block;
+    width: 500px;
+    height: 400px;
+    background-image: url(../img/gastronomia1.jpg);
+    padding: 20px;
+    margin: 20px;
+  
+}
+
+/*nosotros*/
+
+.imagenEquipo{
+    display: block;
+    width: 550px;
+    height: 400px;
+    background-image: url(../img/equipo.jpg);
+    padding: 20px;
+    margin: 20px;
+}
+ 
